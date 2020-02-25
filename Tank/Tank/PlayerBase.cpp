@@ -301,7 +301,7 @@ bool PlayerBase::PlayerControl()
 		if (GetAsyncKeyState('A') & 0x8000)
 		{
 			// 同方向移动才开启自动移动
-			if (mOnIce && mTankDir == DIR_LEFT )
+			if (mOnIce && mTankDir == DIR_LEFT )	// 如果坦克朝向是 左
 			{
 				mAutoMove = true;
 				mAutoMove_Counter = 0;
